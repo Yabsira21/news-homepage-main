@@ -1,0 +1,280 @@
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s all;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  max-width: 69.35rem;
+  margin: 5.55rem auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.45rem;
+}
+
+.menu {
+  position: absolute;
+  right: 8.5%;
+  display: none;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin-left: 2.37rem;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}
+
+a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+section {
+  /* background-color: red; */
+  display: flex;
+}
+
+.main-menu {
+  width: 45.55rem;
+}
+
+.main-menu--hero {
+  background: url(assets/images/image-web-3-desktop.jpg) no-repeat;
+  background-size: cover;
+  height: 18.75rem;
+  width: 45.55rem;
+}
+
+aside {
+  background-color: hsl(240, 100%, 5%);
+  color: wheat;
+  margin-left: 2rem;
+  padding: 1.75rem 1.5rem;
+}
+
+aside h2 {
+  font-size: 2.45rem;
+  margin-bottom: 1.85rem;
+  color: hsl(35, 77%, 62%);
+}
+
+article {
+  padding-bottom: 1.85rem;
+}
+
+aside article:not(:last-of-type) {
+  border-bottom: 1px solid hsla(36, 100%, 99%, 0.35);
+}
+
+aside article:not(:first-of-type) {
+  padding-top: 1.85rem;
+}
+
+article:last-of-type {
+  padding-bottom: 0.25rem;
+}
+
+article h3 {
+  font-size: 1.26rem;
+  margin-bottom: 0.6rem;
+  color: hsl(36, 100%, 99%);
+}
+
+article h3:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+article p {
+  line-height: 1.55rem;
+  color: hsla(36, 100%, 99%, 0.75);
+}
+
+/* .main-menu {
+  display: flex;
+} */
+
+.main-menu--description {
+  display: flex;
+  padding: 2.25rem 0 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 3.45rem;
+}
+
+.main-menu--header {
+  flex: 1;
+}
+
+.main-menu--description-p {
+  font-size: 0.95rem;
+  line-height: 1.475rem;
+  padding-left: 2rem;
+  margin-top: -0.25rem;
+  flex: 1;
+  color: hsl(236, 13%, 42%);
+}
+
+.main-menu--description-p a {
+  display: inline-block;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  margin-top: 2.25rem;
+  padding: 0.85rem 2rem 0.65rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-menu--description-p a:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+footer {
+  display: flex;
+  gap: 1.75rem;
+  margin-top: 4.5rem;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+}
+
+footer img {
+  width: 6.25rem;
+  margin-right: 1.5rem;
+}
+
+.other-links h3 {
+  margin-top: -0.25rem;
+  font-size: 2rem;
+  margin-bottom: 0.65rem;
+  color: hsl(233, 8%, 79%);
+}
+
+.other-links h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.65rem;
+}
+
+.other-links h4:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+
+.other-links p {
+  font-size: 0.95rem;
+  line-height: 1.65rem;
+  color: hsl(236, 13%, 42%);
+}
+
+@media (max-width: 1075px) {
+  main {
+    margin-top: 2rem;
+    width: 85%;
+  }
+  section {
+    flex-direction: column;
+  }
+  aside {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-menu {
+    width: 100%;
+  }
+  .main-menu--hero {
+    width: 100%;
+  }
+  .menu {
+    z-index: 20;
+  }
+  ul {
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    padding: 9rem 0;
+    display: none;
+  }
+  ul li {
+    margin: 1.5rem 0;
+    margin-left: 2rem;
+  }
+  ul li a {
+    font-size: 1.5rem;
+    color: black;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-menu--hero {
+    background: url(assets/images/image-web-3-mobile.jpg) no-repeat;
+  }
+  .main-menu--description {
+    flex-direction: column;
+  }
+  .main-menu--description-p {
+    padding-left: 0;
+  }
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
